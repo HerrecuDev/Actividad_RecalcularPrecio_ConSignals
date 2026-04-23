@@ -1,1 +1,21 @@
-<p>producto works!</p>
+<div class="producto">
+  <div class="info">
+    <p>Precio: <span class="precio">{{precio()}}</span></p>
+    <p>Color: <span class="nombre-color">Rojo</span></p>
+
+    <div class="cantidad-box">
+      <span>Cantidad</span>
+
+      <div class="control-cantidad">
+
+        <button (click)="reducir()">-</button>
+        <span>{{ cantidad() }}</span>
+        <button (click)="aumentar()">+</button>
+
+      </div>
+    </div>
+    <p>Total: <span class="precio">€{{ total() }}</span></p>
+
+  </div>
+
+</div>

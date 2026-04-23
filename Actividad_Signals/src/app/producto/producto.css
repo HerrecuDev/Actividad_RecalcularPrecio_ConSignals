@@ -1,0 +1,84 @@
+:host {
+  --primary: #6366f1;
+  --primary-light: #818cf8;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --radius: 12px;
+}
+
+.producto {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  color: var(--text);
+  box-shadow: 0 10px 40px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.03);
+  max-width: 380px;
+  width: 100%;
+}
+
+.producto h2 {
+  color: var(--primary-light);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 .5rem;
+}
+
+.producto p {
+  color: var(--muted);
+  margin: .25rem 0 .75rem;
+  font-size: .9rem;
+}
+
+.price {
+  color: #f472b6;
+  font-weight: 700;
+}
+
+.nombre-color {
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+.cantidad-box {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin: 1rem 0;
+}
+
+.cantidad-box span {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.control-cantidad {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background: rgba(99,102,241,.1);
+  border: 1px solid rgba(99,102,241,.2);
+  border-radius: 8px;
+  padding: .25rem;
+}
+
+.control-cantidad button {
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: .25rem .5rem;
+}
+
+.control-cantidad button:hover {
+  background: rgba(99,102,241,.15);
+  color: var(--primary-light);
+}
+
+.precio {
+  color: #f87171;
+  font-weight: 700;
+}
